@@ -22,5 +22,5 @@ function checkGuess(){
         message.textContent="📉Your guess is too low!!";
          message.style.color="orange";
     }
-    lives.textContent = `❤️ Lives remaining: ${maxAttempts - attempts}`;
+    lives.textContent = `❤️ Lives remaining: ${maxattempts - attempts}`;
 }
