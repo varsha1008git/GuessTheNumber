@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: bisque;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        text-align: center;
+        background-color: white;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    input, button {
+        padding: 10px;
+        font-size: 16px;
+        margin-top: 10px;
+        width: 200px;
+    }
+
+    #message {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    #lives {
+        margin-top: 10px;
+        font-size: 16px;
+        color: #555;
+    }
+</style>
+
+</head>
+<body>
+    <div class="container">
+    <p><h2>Guess a number between 1 and 100</h2></p>
+    <input type="number" id="guessInput" placeholder="Enter your guess" />
+    <button onclick="checkGuess()">Submit</button>
+    <p id="message"></p>
+    <p id="lives"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
