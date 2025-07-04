@@ -7,12 +7,12 @@ function checkGuess(){
     const lives = document.getElementById("lives");
     attempts++;
     if(guess==snumber){
-         message.textContent = `🎉 Correct! You guessed it in ${attempts} attempts.`;
-        message.style.color="green";
+         message.textContent = `🎉 Correct! You guessed it in ${attempts} attempts.🎉`;
+        message.style.color="black";
     }
     else if(guess>snumber){
         message.textContent="📈Your guess is too high!Try other number..";
-        message.style.color="orange";
+        message.style.color="black";
     }
     else if(attempts>=maxattempts){
          message.textContent = `💀 Game Over! The number was ${secretNumber}.`;
@@ -20,7 +20,7 @@ function checkGuess(){
     }
     else {
         message.textContent="📉Your guess is too low!!";
-         message.style.color="orange";
+         message.style.color="black";
     }
     lives.textContent = `❤️ Lives remaining: ${maxattempts - attempts}`;
 }
